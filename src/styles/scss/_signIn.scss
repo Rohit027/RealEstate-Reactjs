@@ -1,0 +1,41 @@
+.signIn__container{
+    background-image: url("/src/images/Image3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.signIn__container::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $black;
+    opacity: 0.4;
+    z-index: -1;
+}
+.signin__form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.signin__form-container button{
+    width: 10rem;
+}
+.signin__form-container input{
+    
+    width: 50rem;
+    height: 4rem;
+    font-size: 1.6rem;
+}
+.signin__form-container input::placeholder{
+    font-size: 1.6rem;
+}

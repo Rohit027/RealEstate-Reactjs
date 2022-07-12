@@ -1,0 +1,43 @@
+.section__three{
+    margin: 10rem 3rem 0 3rem;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.section__three > *{
+    flex-basis: 100%;
+    width: 50rem;
+    max-height: 50rem;
+}
+.section__video video{
+    width: 100%;
+    height: 100%;
+}
+.contact__form-container{
+    width: 50rem;
+    height: 100%;
+}
+.contact__form-container > h1{
+    margin: 0 0 1rem 0;
+}
+.contact__form input{
+    height: 5rem;
+    font-size: 1.6rem;
+}
+.form-floating textarea{
+    font-size: 1.6rem;
+}
+.contact__form input::placeholder,
+.form-floating textarea::placeholder{
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    opacity: .5;
+}
+@media screen and (max-width: 720px) {
+    .section__three{
+        flex-direction: column;
+    }
+}

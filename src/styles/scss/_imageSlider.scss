@@ -1,0 +1,40 @@
+.img-overlay{
+    position: relative;
+}
+.img-overlay::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $black;
+    opacity: .5;
+    z-index: 1;
+}
+.carousel{
+    position: relative;
+}
+.carousel-control-next,
+.carousel-control-prev{
+    display: block;
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+@media screen and (max-width: 720px) {
+    .carousel-control-next,
+    .carousel-control-prev{
+        width: 5rem;
+        height: 5rem;
+    }
+    .carousel-control-next{
+        right: 0;
+    }
+    .carousel-control-prev{
+        left: 0;
+    }
+    
+}

@@ -1,0 +1,60 @@
+.navbar-brand{
+    font-size: 3.2rem;
+    font-weight: 600;
+    letter-spacing: .15rem;
+}
+.container-fluid{
+    margin: 0 10rem;
+}
+.navbar .my__signBtn{
+    color: $offWhite !important;
+}
+.navbar .my__signBtn:hover{
+    color: $black !important;
+}
+.clrChange{
+    background-color: $white;
+    transition: 500ms ease-in-out;
+    animation: fade 1s ease-in;
+}
+.clrChange .font__black{
+    color: $black !important;
+}
+.my__button{
+    color: black !important;
+    border: 1px solid $black;
+}
+.my__button:hover{
+    color: $white !important;
+    background-color: $black;
+}
+@media screen and (max-width: 820px) {
+    .container-fluid{
+        margin: 0 3rem;
+    }
+    .navbar-toggler{
+        position: relative;
+        width: 5rem;
+        height: 4rem;
+    }
+    .navbar-toggler-scroll{
+        background-color: $black;
+    }
+    .navbar-toggler-icon{
+        width: 3rem;
+        height: 3rem;
+    }
+    .clrChange{
+        background-color: $white;
+        transition: 500ms ease-in-out;
+    }
+    
+}
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

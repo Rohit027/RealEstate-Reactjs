@@ -1,0 +1,38 @@
+
+.home_title-block{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70vw;
+    max-height: 50vh;
+    text-align: center;
+    z-index: 99;
+    color: $white;
+}
+.home_title-block h1{
+    font-size: 6.4rem;
+    font-weight: 800;
+    letter-spacing: .2rem;
+}
+.home_title-block h1 > span{
+    color: $black;
+}
+.btn__one{
+    letter-spacing: .2rem;
+    display: inline-block;
+    border: 1px solid $offWhite;
+    padding: 1rem 2.5rem;
+    color: $white;
+    border-radius: 2rem;
+}
+.btn__one:hover{
+    background-color: white;
+    color: $black;
+    transition: 200ms ease-in;
+}
+@media screen and (max-width: 720px){
+    .home_title-block{
+        top: 40%;
+    }
+}

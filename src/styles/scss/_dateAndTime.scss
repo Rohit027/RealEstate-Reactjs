@@ -1,0 +1,46 @@
+.datetime_section{
+    width: 100%;
+    max-height: 50rem;
+    padding: 8rem 0;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    gap: 2rem;
+}
+.datetime__container{
+    width: calc(100% - 50rem);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+.datetime__container .form-control{
+    height: 40px;
+    font-size: 1.8rem;
+    letter-spacing: .1rem;
+    border-radius: 2rem;
+    text-align: center;
+}
+.btn__book{
+    width: 10rem;
+    font-size: 1.8rem;
+    letter-spacing: .2rem;
+}
+.btn__book:hover{
+    background-color: rgb(126, 117, 117);
+}
+@media screen and (max-width: 720px){
+    .datetime_section{
+        padding: 2rem 0;
+    }
+    .datetime__container{
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .datetime__container .form-control{
+        width: 30rem;
+    }
+}

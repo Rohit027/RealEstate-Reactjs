@@ -1,0 +1,34 @@
+.section__two{
+    margin: 5rem 3rem 0 3rem;
+    min-height: 50vh;
+    display: flex;
+    gap: 2rem;
+}
+.section__two> *{
+    flex-basis: 100%;
+    width: 50rem;
+    height: 40rem;
+}
+.section__description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.section__description > h2{
+    margin: 2rem 0;
+    position: relative;
+    border-bottom: 1px solid $black;
+}
+.sec__image{
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width: 720px){
+    .section__two{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
